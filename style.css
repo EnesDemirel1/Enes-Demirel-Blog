@@ -1,0 +1,252 @@
+/* General */
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Dongle", sans-serif;
+
+  font-size: 20px;
+}
+
+p {
+  margin: 0px;
+}
+h1 {
+  margin: 0;
+}
+
+/* Menu */
+
+.header {
+  position: relative;
+  top: 0;
+  left: 0;
+  background: #333;
+  color: white;
+  display: flex;
+  width: 100%;
+  z-index: 5;
+}
+
+.menu-items li {
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+
+.menu-items li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.menu-items li a:hover {
+  background-color: white;
+  color: black;
+  font-size: larger;
+}
+
+.hidden li a {
+  display: block;
+  text-align: left;
+  margin: 0;
+  padding: 3px;
+}
+
+.hidden li a:hover {
+  background-color: white;
+  color: black;
+  font-size: larger;
+  display: block;
+  opacity: 0.5;
+}
+
+li ul {
+  display: none;
+}
+
+ul li a:hover + .hidden,
+.hidden:hover {
+  display: block;
+}
+/* Home Page */
+
+.home-page {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.home-page p {
+  font-family: "Comic Neue", cursive;
+  font-weight: bold;
+}
+
+.homepage-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: url(bg-1.JPG);
+  opacity: 40%;
+  background-size: cover;
+  background-position: center;
+}
+.home-page img {
+  z-index: 1;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.home-page p {
+  color: black;
+  z-index: 1;
+  width: 50%;
+  text-align: center;
+  column-count: 2;
+  column-rule-style: double;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+/* Footer */
+
+.row {
+  background-color: #333;
+  display: block;
+  height: 50px;
+  color: aliceblue;
+  text-align: center;
+  margin-top: 0;
+  padding-top: 20px;
+  position: relative;
+}
+.row a {
+  text-decoration: none;
+  color: aliceblue;
+  text-decoration: underline;
+}
+
+/* F/. Page */
+
+.faq-page {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.faqpage-bg {
+  position: absolute;
+  width: 100%;
+  height: 200%;
+  left: 0;
+  top: 0;
+  background: url(bg.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.faq-page h1 {
+  position: relative;
+  color: black;
+  background-color: white;
+  width: 60%;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.box {
+  position: relative;
+  color: black;
+  background-color: white;
+  width: 50%;
+  height: fit-content;
+  margin: 5% 60px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: whitesmoke;
+  opacity: 0.2;
+}
+
+.row-faq {
+  position: absolute;
+  background-color: #333;
+  color: aliceblue;
+  left: 0;
+  bottom: 0px;
+  height: 50px;
+  width: 100%;
+  padding-top: 10px;
+  text-align: center;
+}
+.row-faq a {
+  text-decoration: none;
+  color: aliceblue;
+  text-decoration: underline;
+}
+
+#countries {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+
+.container-2 {
+  width: 100%;
+  height: 100vh;
+  border: none;
+}
+
+.container-2 h1 {
+  text-align: center;
+}
+
+.usa-img {
+  width: 300px;
+  height: 650px;
+  float: left;
+  margin-bottom: 50px;
+  margin-right: 50px;
+  margin-left: 30px;
+  border: none;
+  border-radius: 20px;
+}
+
+.usa-img img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.container-2 button {
+  margin-bottom: 5px;
+  margin-top: 0px;
+  display: block;
+  background-color: tan;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+.usa-img:hover {
+  box-shadow: 10px 10px;
+}
